@@ -22,7 +22,7 @@ class APIHelper {
     // String country = "World";
     // String apiKey = "35733828-c985a06ff38e2533edce297ea";
     String api = "https://pixabay.com/api/?key=35733828-c985a06ff38e2533edce297ea&q=$pacl&image_type=photo&pretty=true";
-    // https://source.unsplash.com/random/?$search
+
     http.Response res = await http.get(Uri.parse(api));
 
     // List<Gallary> photos = [];

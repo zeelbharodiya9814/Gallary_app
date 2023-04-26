@@ -194,7 +194,7 @@ class _TabPageState extends State<TabPage>  with SingleTickerProviderStateMixin 
                     );
                   }
                   return Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator(color: Colors.deepPurple[300],),
                   );
                 },
               ),

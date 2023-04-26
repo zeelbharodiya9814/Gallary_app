@@ -193,15 +193,15 @@ class _CategoryState extends State<Category> {
                                     },
                                     child: Container(
                                       height: 250,
-                                      child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                          child: Image.network(
-                                            "${data[i].largeImageURL}",
-                                            fit: BoxFit.cover,
-                                          )),
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
+                                          image: DecorationImage(
+                                              colorFilter: const ColorFilter.mode(
+                                                Color(0xffC19E82),
+                                                BlendMode.modulate,
+                                              ),
+                                              fit: BoxFit.cover,
+                                              image: NetworkImage(data[i].largeImageURL)),
                                       ),
                                     ),
                                   ),

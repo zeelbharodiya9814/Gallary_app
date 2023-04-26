@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:pr_gallary_app/views/screens/homepage.dart';
+import 'package:pr_gallary_app/views/screens/splashscreen.dart';
 import 'package:pr_gallary_app/views/screens/tabpage.dart';
 import 'package:pr_gallary_app/views/screens/wallpaperdetail.dart';
 import 'package:provider/provider.dart';
@@ -23,11 +24,12 @@ void main() {
               ? ThemeMode.light
               : ThemeMode.dark,
           debugShowCheckedModeBanner: false,
-          initialRoute: '/',
+          initialRoute: 'Splash_screen',
           routes: {
             '/': (context) => TabPage(),
             'HomePage': (context) => HomePage(),
             'Detail': (context) => Detail(),
+            'Splash_screen': (context) => Splash_screen(),
           },
         );
       },
